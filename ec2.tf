@@ -1,6 +1,6 @@
 resource "aws_instance" "example" {
   ami           = data.aws_ami.ubuntu-22-04.id
-  instance_type = "t2.small"
+  instance_type = "t2.medium"
 
   tags = {
     Name = "example-instance"
